@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AB12D8362526692500B263D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB12D8352526692500B263D7 /* AppDelegate.m */; };
 		AB12D8392526692500B263D7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB12D8382526692500B263D7 /* SceneDelegate.m */; };
-		AB12D83C2526692500B263D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB12D83B2526692500B263D7 /* ViewController.m */; };
 		AB12D83F2526692500B263D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB12D83D2526692500B263D7 /* Main.storyboard */; };
 		AB12D8412526693100B263D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB12D8402526693100B263D7 /* Assets.xcassets */; };
 		AB12D8442526693100B263D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB12D8422526693100B263D7 /* LaunchScreen.storyboard */; };
@@ -22,8 +21,6 @@
 		AB12D8352526692500B263D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AB12D8372526692500B263D7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		AB12D8382526692500B263D7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AB12D83A2526692500B263D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AB12D83B2526692500B263D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AB12D83E2526692500B263D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB12D8402526693100B263D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB12D8432526693100B263D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +58,25 @@
 		AB12D8332526692500B263D7 /* HarryPotterOBJC */ = {
 			isa = PBXGroup;
 			children = (
+				AB12D84E2526699400B263D7 /* Resources */,
+				AB12D83D2526692500B263D7 /* Main.storyboard */,
+			);
+			path = HarryPotterOBJC;
+			sourceTree = "<group>";
+		};
+		AB12D84E2526699400B263D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				AB12D8342526692500B263D7 /* AppDelegate.h */,
 				AB12D8352526692500B263D7 /* AppDelegate.m */,
 				AB12D8372526692500B263D7 /* SceneDelegate.h */,
 				AB12D8382526692500B263D7 /* SceneDelegate.m */,
-				AB12D83A2526692500B263D7 /* ViewController.h */,
-				AB12D83B2526692500B263D7 /* ViewController.m */,
-				AB12D83D2526692500B263D7 /* Main.storyboard */,
 				AB12D8402526693100B263D7 /* Assets.xcassets */,
 				AB12D8422526693100B263D7 /* LaunchScreen.storyboard */,
 				AB12D8452526693100B263D7 /* Info.plist */,
 				AB12D8462526693100B263D7 /* main.m */,
 			);
-			path = HarryPotterOBJC;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +105,7 @@
 		AB12D8292526692400B263D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TJB;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					AB12D8302526692500B263D7 = {
@@ -145,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB12D83C2526692500B263D7 /* ViewController.m in Sources */,
 				AB12D8362526692500B263D7 /* AppDelegate.m in Sources */,
 				AB12D8472526693100B263D7 /* main.m in Sources */,
 				AB12D8392526692500B263D7 /* SceneDelegate.m in Sources */,
@@ -293,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB59AGWRUY;
-				INFOPLIST_FILE = HarryPotterOBJC/Info.plist;
+				INFOPLIST_FILE = HarryPotterOBJC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +314,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB59AGWRUY;
-				INFOPLIST_FILE = HarryPotterOBJC/Info.plist;
+				INFOPLIST_FILE = HarryPotterOBJC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
