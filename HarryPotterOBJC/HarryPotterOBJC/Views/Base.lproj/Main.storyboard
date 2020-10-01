@@ -11,13 +11,13 @@
         <!--Characters-->
         <scene sceneID="Cdc-ng-JiJ">
             <objects>
-                <tableViewController id="A4d-03-40W" sceneMemberID="viewController">
+                <tableViewController id="A4d-03-40W" customClass="TJBCharacterListTableViewController" customModule="HarryPotterOBJC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="t7D-0b-B1E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="y1p-95-6jk" style="IBUITableViewCellStyleDefault" id="qkU-1w-UPs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="characterCell" textLabel="y1p-95-6jk" style="IBUITableViewCellStyleDefault" id="qkU-1w-UPs">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qkU-1w-UPs" id="t1M-aO-OWW">
@@ -34,7 +34,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="AFI-69-iIw" kind="show" id="Nmd-et-CTl"/>
+                                    <segue destination="AFI-69-iIw" kind="show" identifier="toDetailVC" id="Nmd-et-CTl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="122" y="110"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="rQG-8s-c3w">
             <objects>
-                <viewController id="AFI-69-iIw" sceneMemberID="viewController">
+                <viewController id="AFI-69-iIw" customClass="TJBDetailViewController" customModule="HarryPotterOBJC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fcq-D1-VHW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,6 +158,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FbM-Tj-mj5"/>
+                    <connections>
+                        <outlet property="ancestryLabel" destination="JJf-HY-bJF" id="V1J-NC-oMx"/>
+                        <outlet property="characterImageView" destination="HOY-E8-YtS" id="geL-A9-f17"/>
+                        <outlet property="characterNameLabel" destination="fN9-gQ-aYx" id="Rxi-cA-CDu"/>
+                        <outlet property="dateOfBirthLabel" destination="G8e-0T-XbH" id="IAs-Y8-nmy"/>
+                        <outlet property="eyeColorLabel" destination="Kef-K2-ym6" id="V35-ce-X9w"/>
+                        <outlet property="genderLabel" destination="a8o-17-aNK" id="1rW-5s-CmM"/>
+                        <outlet property="hairColorLabel" destination="zHb-qd-mhd" id="sMk-br-tDV"/>
+                        <outlet property="houseLabel" destination="FGL-i2-zX8" id="Y88-oA-k8Y"/>
+                        <outlet property="speciesLabel" destination="BXr-5N-ESh" id="brH-L1-PWK"/>
+                        <outlet property="wandCoreLabel" destination="aJG-xX-4FC" id="3xg-ab-F1L"/>
+                        <outlet property="wandWoodLabel" destination="EUb-co-QCy" id="16n-8f-BHC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lr6-eb-2Wi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

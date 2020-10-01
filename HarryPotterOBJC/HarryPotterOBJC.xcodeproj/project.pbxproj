@@ -13,6 +13,11 @@
 		AB12D8412526693100B263D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB12D8402526693100B263D7 /* Assets.xcassets */; };
 		AB12D8442526693100B263D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB12D8422526693100B263D7 /* LaunchScreen.storyboard */; };
 		AB12D8472526693100B263D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB12D8462526693100B263D7 /* main.m */; };
+		AB12D85925266D5000B263D7 /* TJBCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB12D85825266D5000B263D7 /* TJBCharacter.m */; };
+		AB12D85D25266D9900B263D7 /* TJBWand.m in Sources */ = {isa = PBXBuildFile; fileRef = AB12D85C25266D9900B263D7 /* TJBWand.m */; };
+		AB12D86125266FDD00B263D7 /* TJBCharacterController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB12D86025266FDD00B263D7 /* TJBCharacterController.m */; };
+		AB12D866252679D700B263D7 /* TJBCharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12D865252679D700B263D7 /* TJBCharacterListTableViewController.swift */; };
+		AB12D86925267B1E00B263D7 /* TJBDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12D86825267B1E00B263D7 /* TJBDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		AB12D8432526693100B263D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB12D8452526693100B263D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB12D8462526693100B263D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB12D85725266D5000B263D7 /* TJBCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJBCharacter.h; sourceTree = "<group>"; };
+		AB12D85825266D5000B263D7 /* TJBCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJBCharacter.m; sourceTree = "<group>"; };
+		AB12D85B25266D9900B263D7 /* TJBWand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJBWand.h; sourceTree = "<group>"; };
+		AB12D85C25266D9900B263D7 /* TJBWand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJBWand.m; sourceTree = "<group>"; };
+		AB12D85F25266FDD00B263D7 /* TJBCharacterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJBCharacterController.h; sourceTree = "<group>"; };
+		AB12D86025266FDD00B263D7 /* TJBCharacterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJBCharacterController.m; sourceTree = "<group>"; };
+		AB12D864252679D600B263D7 /* HarryPotterOBJC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HarryPotterOBJC-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB12D865252679D700B263D7 /* TJBCharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJBCharacterListTableViewController.swift; sourceTree = "<group>"; };
+		AB12D86825267B1E00B263D7 /* TJBDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJBDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +72,10 @@
 		AB12D8332526692500B263D7 /* HarryPotterOBJC */ = {
 			isa = PBXGroup;
 			children = (
+				AB12D85325266CD200B263D7 /* Models */,
+				AB12D85225266CCC00B263D7 /* Views */,
+				AB12D85125266CC100B263D7 /* Controllers */,
 				AB12D84E2526699400B263D7 /* Resources */,
-				AB12D83D2526692500B263D7 /* Main.storyboard */,
 			);
 			path = HarryPotterOBJC;
 			sourceTree = "<group>";
@@ -77,6 +93,53 @@
 				AB12D8462526693100B263D7 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB12D85125266CC100B263D7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB12D85525266CF500B263D7 /* ModelControllers */,
+				AB12D85425266CE600B263D7 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB12D85225266CCC00B263D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB12D83D2526692500B263D7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB12D85325266CD200B263D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB12D85725266D5000B263D7 /* TJBCharacter.h */,
+				AB12D85825266D5000B263D7 /* TJBCharacter.m */,
+				AB12D85B25266D9900B263D7 /* TJBWand.h */,
+				AB12D85C25266D9900B263D7 /* TJBWand.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB12D85425266CE600B263D7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB12D865252679D700B263D7 /* TJBCharacterListTableViewController.swift */,
+				AB12D864252679D600B263D7 /* HarryPotterOBJC-Bridging-Header.h */,
+				AB12D86825267B1E00B263D7 /* TJBDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB12D85525266CF500B263D7 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB12D85F25266FDD00B263D7 /* TJBCharacterController.h */,
+				AB12D86025266FDD00B263D7 /* TJBCharacterController.m */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +173,7 @@
 				TargetAttributes = {
 					AB12D8302526692500B263D7 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -150,7 +214,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB12D8362526692500B263D7 /* AppDelegate.m in Sources */,
+				AB12D85D25266D9900B263D7 /* TJBWand.m in Sources */,
+				AB12D86925267B1E00B263D7 /* TJBDetailViewController.swift in Sources */,
 				AB12D8472526693100B263D7 /* main.m in Sources */,
+				AB12D866252679D700B263D7 /* TJBCharacterListTableViewController.swift in Sources */,
+				AB12D85925266D5000B263D7 /* TJBCharacter.m in Sources */,
+				AB12D86125266FDD00B263D7 /* TJBCharacterController.m in Sources */,
 				AB12D8392526692500B263D7 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB59AGWRUY;
 				INFOPLIST_FILE = HarryPotterOBJC/Resources/Info.plist;
@@ -303,6 +373,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TrevorBursach.HarryPotterOBJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HarryPotterOBJC/Controllers/ViewControllers/HarryPotterOBJC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -312,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB59AGWRUY;
 				INFOPLIST_FILE = HarryPotterOBJC/Resources/Info.plist;
@@ -321,6 +395,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TrevorBursach.HarryPotterOBJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HarryPotterOBJC/Controllers/ViewControllers/HarryPotterOBJC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
